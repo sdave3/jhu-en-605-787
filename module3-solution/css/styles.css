@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+body {
+	background-color: #F0F8FF;
+	font-family: "Times New Roman", Times, serif;
+}
+
+/** Header Element Styles**/
+#header-nav {
+	background-color: blue ;
+  	border-radius: 0;
+  	border: 0;
+}
+
+/**  Nav Bar Header Styles **/
+.navbar-brand {
+	padding-top: 15px;
+}
+
+.navbar-brand h1 {
+	float: left;
+  	color: #557c3e;
+  	font-size: 1.5em;
+  	color: white;
+  	text-transform: uppercase;
+  	font-weight: bold;
+  	text-shadow: 1px 1px 1px #222;
+  	margin-top: 0;
+  	margin-bottom: 0;
+  	line-height: .75;
+}
+
+/** Nav Dropdown Menu Styles **/
+#nav-list {
+	margin-top: 5px;
+}
+
+#nav-list a {
+  color: white;
+  font-weight: bold;
+  background-color: gray;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+#nav-list a:hover {
+  background: #33FFAC;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+	border: 2px solid white;
+}
+
+
+/** Body Content Styling **/
+.row {
+  width: 100%;
+}
+
+#title {
+	color: white;
+	font-weight: bold;
+}
+
+.content {
+	clear: right;
+	padding: 5px;
+	color: white;
+}
+
+.box {
+	border: 2px solid black;
+	padding: 5px;
+	background-color: grey;
+	width: 90%;
+	height: 700px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 15px;
+}
+
+.content a {
+  color: white;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+
