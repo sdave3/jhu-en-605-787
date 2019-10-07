@@ -11,7 +11,6 @@
     $scope.tooMuchMsg = "";
     $scope.tooMuchMsgColor = "";
     $scope.tooMuchMsgColorStyle = "";
-    $scope.testmsg = "";
 
     $scope.tooMuch = function () {
       if ($scope.lunchMenu === ""){
@@ -33,7 +32,6 @@
         }else if(lunchMenuArr.length > 3){
           $scope.tooMuchMsg = "Too much!";
         }
-        $scope.testmsg = lunchMenuArr;
       }
     };
   };
