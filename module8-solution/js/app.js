@@ -54,12 +54,20 @@ function MenuSearchService($http, ApiBasePath) {
 function FoundItemsDirective() {
 	var ddo = {
 		templateUrl: 'foundItems.html',
+		restrict: "E",
 		scope: {
-			found: '=',
+			foundItems: '<',
 			onRemove: '&'
-		}
+		},
+		controller: FoundItemsController,
+		controllerAs: 'menu',
+		bindToController: true
 	};
   return ddo;
 }
 
+// Directive -- Controller
+function FoundItemsController(){
+	var menu = this;
+}
 })();

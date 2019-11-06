@@ -1,12 +1,12 @@
 <br>
 <br>
 <h1 align="center">Terms Matched</h1>
-<h3 ng-if="found.length == 0">Nothing Found</h3>
+<h3 ng-if="menu.foundItems.length == 0">Nothing Found</h3>
 <ul>
-  <li ng-repeat="item in found">
+  <li ng-repeat="item in menu.foundItems">
     <p>{{ item.name }}</p>
     <p>{{ item.short_name }}</p>
     <p>{{ item.description }}</p>
-    <button ng-click="found.onRemove({index: $index});">Don't want this one!</button>
+    <button ng-click="menu.onRemove({index: $index});">Don't want this one!</button>
   </li>
 </ul>
