@@ -5,6 +5,9 @@
 
 <ul>
   <li ng-repeat="item in menu.foundItems">
-    <p>{{ item.name }} <==> {{ item.short_name }} <==> {{ item.description }} <==> <button ng-click="menu.onRemove({index: $index});">Don't want this one!</button></p>
+    <p> Name: {{ item.name }} <br>
+        Short Name: {{ item.short_name }} <br>
+        Description: {{ item.description }} <br>
+        <button style="background-color:black;color:white;" ng-click="menu.onRemove({index: $index});">Don't want this one!</button></p>
   </li>
 </ul>

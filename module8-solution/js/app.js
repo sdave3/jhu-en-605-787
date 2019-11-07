@@ -19,7 +19,7 @@ function NarrowItDownController(MenuSearchService) {
 		var promise = MenuSearchService.getMatchedMenuItems(menu.searchTerm );
 		promise.then(
 			function (response) {
-				menu.found = response.data;
+				menu.found = response;
 			}
 		).catch(
 			function (error) {
@@ -41,10 +41,9 @@ function MenuSearchService($http, ApiBasePath) {
 	service.getMatchedMenuItems = function (searchTerm){
 		return $http({
 			method: "GET",
-			url: (ApiBasePath)
+			url: ApiBasePath
 		}).then( function (response) {
 			 var foundItems = response.data.menu_items.filter(matchTerm => matchTerm.description.includes(searchTerm));
-			 console.log(foundItems);
 			 return foundItems;
 		});
 	};
