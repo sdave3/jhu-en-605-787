@@ -1,0 +1,6 @@
+<h2>List of Categories to Select From</h2>
+<ol>
+  <li ng-repeat="category in $ctrl.categories">
+    <a ui-sref="items({categoryShortName: category.short_name})">{{category.name}}</a>
+  </li>
+</ol>
