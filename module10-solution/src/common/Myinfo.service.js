@@ -19,7 +19,7 @@
       return service.myInfo;
     }
 
-    //Validate User Info for dish
+    //Validate fav dish for user
     service.validateFavDish = function(shortName){
       return $http({
         method: "GET",
