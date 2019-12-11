@@ -1,0 +1,17 @@
+<div class="container" ng-if="!myInfoCtrl.isNotEmpty()">
+  <h3>Not registered yet. Please Sign up by clicking on Sign up button at top.</h3>
+<div>
+<div class="container" ng-if="myInfoCtrl.isNotEmpty()">
+  <h3 class="text-center">User Registration Information</h3>
+  <ol>
+    <li>First Name: {{myInfoCtrl.firstName}}</li>
+    <li>Last Name: {{myInfoCtrl.lastName}}</li>
+    <li>Email Address: {{myInfoCtrl.email}}</li>
+    <li>Phone Number: {{myInfoCtrl.phone}}</li>
+    <li>
+      <p>Favorite Dish: {{myInfoCtrl.favDish.name}}</p>
+      <p>Favorite Description: {{myInfoCtrl.favDish.description}}</p>
+      <p>Favorite Dish: {{myInfoCtrl.favDish.name}}</p>
+    </li>
+  </ol>
+</div>
